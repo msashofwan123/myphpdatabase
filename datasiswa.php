@@ -42,6 +42,7 @@ if ($_SESSION['nama_login'] == null) {
     <?php
     require_once('header.php');
 
+    // PERINTAH MENAMPILKAN HASIL PENCARIAN
     if (isset($_GET['cari'])) {
         echo "<br>";
         echo "<h3><center>Data Ditemukan<center></h3>";
