@@ -160,7 +160,7 @@ if ($_SESSION['nama_login'] == null) {
     $(document).ready(function() {
         $('#mytable').DataTable({
             "language": {
-                "url": "//cdn.datatables.net/plug-ins/1.10.19/i18n/Indonesian.json"
+                "url": "//cdn.datatables.net/plug-ins/1.13.1/i18n/id.json"
             }
         });
     });
