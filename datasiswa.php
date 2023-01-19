@@ -25,14 +25,17 @@ if ($_SESSION['nama_login'] == null) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Form Pendaftaran</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-    <link rel="stylesheet" href="index.css">
     <link href="favicon.ico" rel="icon" type="image/x-icon" />
 
-    <!-- DATA TABLE  -->
+    <!-- BOOTSTRAP 5.3.0 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+    <!-- DATA TABLE -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.datatables.net/1.10.19/css/dataTables.bootstrap.min.css">
 
+    <!-- INTERNAL CSS -->
+    <link rel="stylesheet" href="index.css">
 </head>
 
 <body>
@@ -46,6 +49,7 @@ if ($_SESSION['nama_login'] == null) {
         echo "<br>";
     };
     ?>
+
     <div class="container">
         <table class="table table-striped mytable" id="mytable">
             <thead>
@@ -156,8 +160,8 @@ if ($_SESSION['nama_login'] == null) {
     $(document).ready(function() {
         $('#mytable').DataTable({
             "language": {
-            "url": "//cdn.datatables.net/plug-ins/1.10.19/i18n/Indonesian.json"
-        }
+                "url": "//cdn.datatables.net/plug-ins/1.10.19/i18n/Indonesian.json"
+            }
         });
     });
 </script>
